@@ -17,8 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'I Am Pojok Boys', // Judul aplikasi
       theme: ThemeData(
         primarySwatch: Colors.blue, // Warna utama aplikasi
-        scaffoldBackgroundColor:
-            Colors.lightBlue[100], // Warna latar belakang aplikasi
+        scaffoldBackgroundColor: const Color.fromARGB(
+          255,
+          114,
+          115,
+          116,
+        ), // Warna latar belakang aplikasi
       ),
       home: const HomeScreen(), // Mengatur halaman utama aplikasi
     );
@@ -33,8 +37,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('I Am Pojok Boys'), // Judul pada AppBar
-        backgroundColor: const Color.fromARGB(255, 20, 160, 20), // Warna AppBar
+        title: Text(
+          'I Am Pojok Boys',
+          style: TextStyle(
+            color: Colors.white, // Warna teks putih
+            fontSize: 20, // Ukuran font
+            fontWeight: FontWeight.bold, // Ketebalan font
+          ),
+        ), // Judul pada AppBar
+        backgroundColor: const Color.fromARGB(255, 41, 10, 128), // Warna AppBar
         centerTitle: true, // Membuat judul berada di tengah
       ),
       body: SafeArea(
@@ -97,9 +108,9 @@ class HomeScreen extends StatelessWidget {
                                 FontWeight.bold, // Membuat teks lebih tebal
                             color: Color.fromARGB(
                               255,
-                              20,
-                              160,
-                              20,
+                              47,
+                              13,
+                              138,
                             ), // Warna teks
                           ),
                         ),
